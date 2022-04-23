@@ -9,6 +9,10 @@
     <script src="https://kit.fontawesome.com/969ee16a99.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,16 +21,16 @@
             <div class="logo"><h1>Edie</h1></div>
             <div class="bars"><i class="fas fa-bars"></i></div>
             <ul class="nav-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Our Works</a></li>
-                <li><a href="#">Client</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#our-works">Our Works</a></li>
+                <li><a href="#client">Client</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <div class="close-menu"><i class="fas fa-times"></i></div>
             </ul>
         </nav>
 
-        <div class="header-text">
+        <div class="header-text " id="home">
             <div class="query">
                 <p>Unhappy with your website?</p>
             </div>
@@ -35,7 +39,7 @@
             </div>
         </div>
 
-        <div class="hero-image">
+        <div class="hero-image js--about-section">
             <img src="img/heroImage.jpg" alt="Hero Image">
         </div>
 
@@ -49,16 +53,16 @@
             <div class="small-text">
                 <p>Want us to contact you?</p>
             </div>
-            <form action="" class="form">
+            <form action="" class="form js--services-section">
                 <input type="text" placeholder="Email">
                 <input type="submit" value="Join" class="btn">
             </form>
         </div>
 
-        <div class="services-section">
+        <div class="services-section" id="services">
             <h3>We offer high <br> demand services  </h3>
             <div class="service">
-                <div class="card">
+                <div class="card js--service-box">
                     <span class="material-icons edit">
                         edit
                     </span>
@@ -70,7 +74,7 @@
                     </p>
                     <input type="submit" value="Get started" class="button" >
                 </div>
-                <div class="card1">
+                <div class="card1 js--service-box">
                     <span class="material-icons code">
                         code
                     </span>
@@ -82,7 +86,7 @@
                     </p>
                     <input type="submit" value="Get started" class="button2" >
                 </div>
-                <div class="card">
+                <div class="card js--service-box">
                     <span class="material-icons dns">
                         dns
                     </span>
@@ -96,7 +100,7 @@
                 </div>
             </div>
         </div>
-        <div class="our-work">
+        <div class="our-work " id="our-works">
             <h3>Good design means <br> good business</h3>
             <div class="main">
                 <div class="work">
@@ -122,19 +126,19 @@
                         <p class="span">Front End application</p>
                         <p class="main">Juice product homepage</p>
                     </div>
-                    <div class="link">
+                    <div class="link js--about-section">
                         <a href="#">see more &#8594;</a>
                     </div>
                 </div>
             </div>
-            <div class="team-section">
+            <div class="team-section " >
                 <div class="team">
-                    <div class="team-text">
+                    <div class="team-text ">
                         <p class="red-text">Meet the team</p>
                         <p class="bold">We are chilled <br> and a laidback <br> team</p>
                         <p class="s-text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
                     </div>
-                    <div class="team-img">
+                    <div class="team-img js--about-box">
                         <div class="img1">
                             <img src="img/person3.png" alt="Person 3" class="person3">
                         </div>
@@ -145,11 +149,11 @@
                     </div>
                 </div>
             </div>
-            <div class="quote-section">
+            <div class="quote-section" id="client">
                 <div class="quote">
                     <p>“Fast and outstanding resutls. Edie understands their customer&apos;s needs. They have a young and talented team.”</p>
                 </div>
-                <div class="img-details">
+                <div class="img-details js--enterprise">
                     <div class="img4">
                         <img src="img/person4.png" alt="Person 4">
                     </div>
@@ -162,7 +166,7 @@
             
         </div>
     </div>
-    <div class="footer-section">
+    <div class="footer-section" id="contact">
         <div class="footer-details">
             <div class="nav-details">
                 <ul>
@@ -196,7 +200,12 @@
         </footer>
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="jquery.js"></script>   
     <script src="script.js"></script>
 </body>
 </html>
